@@ -1,0 +1,198 @@
+  
+   
+   html {
+    box-sizing: border-box;
+  }
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+  body {
+    background-color: rgb(233, 241, 239);
+  } 
+.container {
+    margin-top: 40px;
+    color: rgb(114, 103, 103);     
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(119, 198, 230);
+    height: auto;
+  }
+
+  a{
+    color: white;
+  }
+
+  .aContacts{
+    color: red;
+  }
+
+  h3{
+    color: rgba(69, 71, 71, 0.911)
+  }
+  
+.hrnew {
+    border-top: 1px solid#aaa;
+    width: 100%;
+}
+
+.pic {
+    padding:15px ;
+}
+
+.fixed-bottom {
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: #ccc;
+}
+
+.box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.box .face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.box .face span {
+  width: 150px;
+  height: 100%;
+  transition: 1s;
+}
+
+.box .face.face1 span {
+  background: url(gina.png);
+  transform-origin: top;
+}
+
+.box:hover .face.face1 span {
+  transform: rotateX(90deg) translateY(-50%);
+}
+
+.box .face.face2 span {
+  background: url(gina5.png);
+  transform-origin: bottom;
+  transform: rotateX(90deg) translateY(50%);
+}
+
+.box:hover .face.face2 span {
+  transform: rotateX(0deg) translateY(0);
+}
+
+.box .face span:nth-child(1) {
+  background-position-x: 0;
+  transition-delay: 0s;
+}
+
+.box .face span:nth-child(2) {
+  background-position-x: -150px;
+  transition-delay: 0.2s;
+}
+
+
+
+
+/* Width at 1200px and below */
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }  
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+
+
+/* Additional Screen Sizes */
+
+/* Width at 320px and below */
+@media screen and (max-width: 320px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  } 
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+/* Width at 168px and below */
+@media screen and (max-width: 168px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }  
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+  
+
